@@ -53,8 +53,7 @@
             </td>
             <td>
                 
-                <a asp-action="Delete" class="btn btn-outline-danger" asp-route-id="@item.ShoppingCartId"style="margin-right: 10px">Usuń</a>
-                <a asp-action="Rent" class="btn btn-success form-control; btn btn-primary">Wypożycz</a>
+                <a asp-action="Delete" class="btn btn-outline-danger" asp-route-id="@item.ShoppingCartId">Delete</a>
             </td>
         </tr>
 }
@@ -62,3 +61,6 @@
     </tbody>
    			
 </table>
+<div class="col-sm-12 col-lg-4 col-md-6 offset-lg-8 offset-md-6 ">
+						<a asp-action="Rent" class="btn btn-success form-control">Wypożycz</a>
+					</div>
