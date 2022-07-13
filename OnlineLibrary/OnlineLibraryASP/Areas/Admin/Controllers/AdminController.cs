@@ -86,7 +86,7 @@ namespace OnlineLibraryASP.Areas.Admin.Controllers
             var model = _rentedBookService.GetById(id);
             _rentedBookService.RentingBooks(model);
 
-            return RedirectToAction(nameof(ToRent));
+            return RedirectToAction(nameof(ToRelase));
         }
 
 
@@ -95,7 +95,7 @@ namespace OnlineLibraryASP.Areas.Admin.Controllers
             var model = _rentedBookService.GetById(id);
             _rentedBookService.ReturningBooks(model);
 
-            return RedirectToAction(nameof(ToRent));
+            return RedirectToAction(nameof(ToReturn));
         }
     }
 }
